@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!----LEFT CONTENT-->
+      <section class="bimage">
+        <div class="logo">
+          <img src="odin-lined.png" alt="logo" />
+          <h1>ODIN</h1>
+        </div>
+      </section>
+      <!----RIGHT CONTENT-->
+      <div class="start">
+        <section class="side">
+        <p class="side1">
+        This is not a real online Service! You know you need something like this in your life to 
+        help you realize your deepest dreams. Sign up <span1> now </span> 
+        to get started
+        </p>
+        <p class="side2">You <span2> know </span> you want to.</p>
+        </section>
+
+        <section class="form">
+          <h5>Let's do this!</h5>
+          <form>
+            <section class="list">
+              <section>
+                <label for="fname"> FIRST NAME </label><br />
+                <input type="text" id="fname" name="fname" value=""/><br />
+                <label for="email"> EMAIL </label><br />
+                <input type="email" id="email" name="email" value=""/><br />
+                <label for="password"> PASSWORD </label><br />
+                <input type="password" id="pword" name="pword"/><br />
+            </section>
+
+            <section>
+                <label for="lname"> LAST NAME </label><br />
+                <input type="text" id="lname" name="lname" value=""/><br />
+                <label for="number"> PHONE NUMBER </label><br />
+                <input type="number" id="number" name="number" value=""/><br />
+                <label for="password"> PASSWORD </label><br />
+                <input type="password" id="cpword" name="cpword"/><br />
+            </section>
+          </section>
+          <script type="text/javascript">
+            function validate(){
+              var password = document.getElementById(pword);
+              var confirmpassword = document.getElementById("cpword").value;
+              if (password != confirmpassword){
+                alert("Passwords do not match");
+                return false;
+              }
+              return true;
+            }
+          </script>
+      </form>
+      </section>
+      <section class="button">
+      <input type="submit" value="Create Account" class="button1" onclick="return validate()"/>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </section>
+    </section>
+  </div>
+</section>
+    </section>
+  </body>
+</html>
